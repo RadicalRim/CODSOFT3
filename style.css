@@ -1,0 +1,310 @@
+*{
+    font-family:sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:#04282b;
+
+}
+
+header{
+    position:absolute;
+    width:100%;
+    margin-top: 0;
+    margin-left: 0;
+    padding:20px 10% 20px 10%;
+    background-color:transparent;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-size: 25px;
+    color:antiquewhite;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar a{
+    font-size: 19px;
+    color:white;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left:30px;
+    transition: 2s;
+}
+
+.navbar a:hover{
+    color:rgb(66, 136, 163);
+
+}
+
+.homepage{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 10%;
+  
+}
+
+.h_content{
+    max-width:600px;
+}
+
+.h_content h1{
+    font-size:60px;
+    font-weight: 720;
+    color:white;
+}
+
+.h_content h4{
+    font-size:30px;
+    font-weight: 700;
+    color:rgb(31, 99, 70);
+}
+
+.h_content p{
+    font-size:15px;
+    font-weight: 100;
+    color:white;
+
+
+}
+
+.home_image{
+    background-image:url(programmer-working-with-php_52683-22998.avif);
+    height: 70%;
+    width:400px;
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-color: white;
+    border-radius: 60%;
+    box-shadow:(0,0,0,0.8);
+    border:3px solid rgb(1, 20, 24);
+}
+
+/*-----------ABOUT----------*/
+.about{
+  padding:80px 0px;
+  color:rgb(4, 7, 39);
+
+}
+
+.row{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column1{
+    flex-basis:34%;
+
+}
+
+.column1 img{
+    width:100%;
+    height:80%;
+    border-radius: 10%;
+
+
+}
+
+.column2{
+    flex-basis: 60%;
+    color:white;
+
+}
+
+.subtitle{
+    font-size: 40px;
+    font-weight: 600;
+    color:white;
+}
+
+.title{
+    display:flex;
+    margin:20px 0px 42px 0px;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.title p{
+    font-size: 19px;
+    font-weight: 400;
+    position: relative;
+    margin-top:25px;
+    margin-right:52px;
+    }
+
+.title ul li span{
+    color:rgb(174, 174, 190);
+    font-size:15px;
+    margin-top:50px;
+    }
+
+
+    /*---------------skills---------------*/
+    .SKILLS{
+        padding:20px 0px;
+    }
+
+    .skill-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+        grid-gap:40px;
+        margin-top:50px;
+        color:white;
+
+
+    }
+    .skill-list div{
+        background-color: rgb(43, 131, 146);
+        padding:40px;
+        font-size: 13px;
+        font-weight: 300;
+        border-radius: 10%;
+        transition:backgroung 0.5s, transform 0.5s;
+
+
+    }
+    
+    .skill-list div i{
+        font-size: 40px;
+        font-weight: 300;
+      margin-bottom:30px;
+        
+
+    }
+    .skill-list div h2{
+        font-size: 30px;
+        font-weight: 500;
+      margin-bottom:15px;
+        
+
+    }
+    .skill-list div i{
+        text-decoration: none;
+        color:white;
+        font-size:12px;
+        margin-top:20px;
+        display:inline-block;
+    }
+
+    .skill-list div:hover{
+        background-color: rgb(99, 108, 160);
+        transform:translateY(-10px);
+    }
+
+
+    /*--------------projects____--------*/
+    .PROJECTS{
+        padding:30px 0px;
+    }
+
+    .Project-list{
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+        grid-gap:40px;
+        margin-top:50px;
+        color:white;
+
+
+    }
+    .Project-list div{
+        background-color: #064c53;
+        padding:40px;
+        font-size: 13px;
+        font-weight: 300;
+        border-radius: 10%;
+        transition:background 0.5s, transform 0.5s;
+        background-repeat: no-repeat;
+
+
+    }
+
+
+    .Project-list div h2{
+        font-size: 30px;
+        font-weight: 500;
+      margin-bottom:15px;
+    }
+
+    .Project-list div a{
+        text-decoration: none;
+        color:#04282b;
+    }
+        
+    
+    .Project-list div:hover{
+        background-color: rgb(99, 108, 160);
+        transform:translateY(10px);
+    }
+
+        /*------------contact------------*/
+
+        .contact-left{
+            flex-basis:35%;
+        }
+
+        .contact-left p{
+            margin-top:30px;
+            color:white;
+
+        }
+
+        .contact-left p i{
+            color:whitesmoke;
+            margin-right:15px;
+            font-size:25px;
+        }
+
+        .social-icons{
+            margin-top:30px;
+        }
+
+        .social-icons a{
+            text-decoration:none;
+            font-size:30px;
+            margin-right:25px;
+            margin-left:20px;
+            color:antiquewhite;
+            display: inline-block;
+            transition:transform 0.5s;
+        }
+        .social-icons a:hover{
+            color:rgb(144, 158, 223);
+            transform:translateX(-5px);
+        }
+
+        .btn{
+            margin-right: 400px;
+            margin-top:50%;
+            color:white;
+            text-decoration: none;
+            height:200px;
+            width: 8em;
+            background-color:  #011a1d;
+            text-align: center;
+            justify-content: center;
+            font-size: 25px;
+            font-weight: 300;
+
+
+        }
+
+        footer{
+            height: 60px;
+            width:100%;
+            color: white;
+            background-color: #011a1d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
